@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo page</title>
-</head>
-<body>
-  <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/common.css" />
+    <title>Demo page</title>
+  </head>
+  <body>
+    <div class="login-form">
+      <div class="login-form__header">
+        <img class="login-form__logo" src="misc/5087dc1b421c7a0b79000000_56e7c4e3c1c45.png" alt="">
+        <img class="login-form__logo" src="misc/4c671371b02d586f499a4d89bf58fa50.png">
+      </div>
+      <form class="login-form__body">
+        <div class="form-group">
+        <h1 class="login-form__title">Logg inn</h1>
+          <label for="email" class="form-group__label"
+            >Skriv inn din e-postadresse *</label
+          >
+          <input type="email" id="email" class="form-group__input" required />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-group__label"
+            >Vennligst oppgi passordet ditt *</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="form-group__input"
+            required
+          />
+        </div>
+        <div class="login-form__forgot-password">
+          <a href="#">Glemt passord?</a>
+        </div>
+        <div class="login-form__submit">
+          <button type="submit" class="login-form__button">Logg på</button>
+        </div>
+        <div class="login-form__footer">
+          <a href="#" class="login-form__create-account">Opprette ny konto</a>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

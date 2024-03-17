@@ -1,3 +1,119 @@
 // YOU MUST USE BEM HERE
-// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
+// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
+
+$primary-color: #0055a4; // Example primary color (blue)
+$font-color: #333; // Dark gray color for text
+$error-color: #d32f2f; // Example error color (red)
+$font-stack: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif; // Example font stack
+$border-radius: 4px; // Border radius for inputs and button
+$box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); // Box shadow for depth
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: $font-stack;
+	box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 9px 46px 8px rgba(0,0,0,.12),0 24px 38px 3px rgba(0,0,0,.14);
+	border-radius: 9px;
+
+    &__header {
+        margin-bottom: 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 85px;
+		padding: 0 2rem;
+    }
+	&__logo{
+		height: 24px;
+	}
+    &__title {
+        color: $primary-color;
+        font-size: 1.5rem;
+		font-style: normal;
+		line-height: 130%
+    }
+
+	&__body {
+		padding: 2rem;
+	
+		.form-group {
+		  margin-bottom: 1rem;
+	
+		  &__label {
+			display: block;
+			color: $font-color;
+			font-size: 0.9rem;
+			margin-bottom: 0.5rem;
+		  }
+	
+		  &__input {
+			width: 100%;
+			padding: 0.75rem;
+			border: 1px solid #ccc;
+			border-radius: $border-radius;
+			font-size: 0.9rem;
+			color: $font-color;
+		  }
+		}
+		
+		&__forgot-password {
+		  margin-bottom: 2rem;
+		  text-align: right;
+		  
+		  a {
+			color: $primary-color;
+			text-decoration: none;
+			font-size: 0.9rem;
+			
+			&:hover {
+			  text-decoration: underline;
+			}
+		  }
+		}
+		
+		&__submit {
+		  margin-bottom: 1rem;
+		}
+	
+		&__button {
+		  width: 100%;
+		  padding: 1rem;
+		  border: none;
+		  border-radius: $border-radius;
+		  background-color: $primary-color;
+		  color: white;
+		  font-size: 1rem;
+		  cursor: pointer;
+		  box-shadow: $box-shadow;
+		  border: 1px solid transparent; // In case of button focus outline
+	
+		  &:hover {
+			background-color: darken($primary-color, 10%);
+		  }
+	
+		  &:focus {
+			outline: none;
+			border-color: $error-color;
+		  }
+		}
+	  }
+	  
+	  &__footer {
+		text-align: center;
+		margin-top: 2rem;
+		
+		&__create-account {
+		  color: $primary-color;
+		  text-decoration: none;
+		  font-size: 0.9rem;
+		  
+		  &:hover {
+			text-decoration: underline;
+		  }
+		}
+	  }
+	}
