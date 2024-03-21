@@ -2,9 +2,9 @@
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
 
-$primary-color: #1d72db; // Example primary color (blue)
-$font-color: #333; // Dark gray color for text
-$gray-background-color: rgba(0, 0, 0, 0.09); // Example error color (red)
+$primary-color: #1d72db;
+$font-color: #333;
+$gray-background-color: rgba(0, 0, 0, 0.09);
 $font-stack: "Helvetica Neue",
 Helvetica,
 Arial,
@@ -117,13 +117,13 @@ html, body {
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 4px;
-    background-color: transparent; // No background color by default
-    color: $primary-color; // Text color matches what would be the primary button's background
+    background-color: transparent;
+    color: $primary-color;
     font-size: 1rem;
     cursor: pointer;
     
     &:hover {
-        background-color: transparent; // Ensure background stays transparent on hover
+        background-color: transparent;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 5px, rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(0, 0, 0, 0.14) 0px 0px 4px;
     }
 
@@ -173,10 +173,10 @@ html, body {
 
 .checkbox__input {
     display: inline-block;
-    width: 20px; /* Custom width */
-    height: 20px; /* Custom height, making it square */
-    border: 2px solid #555; /* Custom border */
-    border-radius: 4px; /* Rounded corners */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
     position: relative;
     cursor: pointer;
 }
