@@ -4,7 +4,6 @@
 @use 'common';
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #ffffff;
     margin: 0;
 }
@@ -17,6 +16,7 @@ body {
 
 .search-section {
     padding: 31px 0 0 0;
+    display: flex;
 }
 
 .categories {
@@ -25,19 +25,14 @@ body {
     margin: 1rem 0 0 0;
     .btn {
         padding: 16px 4px;
+        
     }
 }
-*{
-    box-sizing: border-box;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }¨
-html {
-    color: #111;
+
+.adverts {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-auto-flow: row dense;
 }
 
 :root {
@@ -46,6 +41,14 @@ html {
     --primary-color: #007bff;
   }
   
+  .popular {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    color: common.$font-color;
+    margin: 3rem 0 2rem 0;
+    padding: 0 0 0 1rem;
+  }
   
   .phone-section {
     width: 40%;
