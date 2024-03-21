@@ -1,3 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.btn {
+  @extend .flex;
+  @extend .flex-center;
+  @extend .border-bottom-2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0 1rem;
+  margin: 0 0 0 1rem;
+  color: #000;
+
+  &__content {
+    @extend .flex;
+    @extend .flex-center;
+    margin: 0;
+  }
+
+  &__icon {
+    margin-right: 0.8rem;
+    color: #6f7d90;
+    @extend .flex;
+    @extend .flex-center;
+  }
+
+  &:hover {
+    border-color: #0063fb;
+  }
+
+  &--category {
+    @extend .m-0;
+    @extend .border-0;
+     .btn__content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .btn__icon {
+      color: #38bdf8;
+      padding-bottom: 1rem;
+      margin: 0;
+    }
+
+    &:hover {
+      color: #6f7d90;
+      .btn__icon {
+        color: #6f7d90;
+      }
+    }
+  }
+
+  &--left {
+    @extend .m-0;
+    @extend .p-0;
+    @extend .mr-auto;
+  }
+}
+
+.header {
+  @extend .border-bottom;
+}
+
+.navbar {
+  height: 49px;
+  @extend .flex;
+}
+
+.search {
+  position: relative;
+
+  &__input {
+    @extend .p-1;
+    background-color: transparent;
+    border: 1px solid #c3ccd9;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    font-size: 1.6rem;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+    @extend .flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    @extend .flex-center;
+    position: absolute;
+    width: 4rem;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid #c3ccd9;
+}
+
+.border-bottom-2 {
+  border-bottom: 2px solid transparent;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.p-0 {
+    padding: 0;
+  }
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.m-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.m-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
