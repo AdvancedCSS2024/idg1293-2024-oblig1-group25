@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="https://livejs.com/live.js"></script>
+  <title>Demo page</title>
 </head>
+
 <body>
-  
+
+<header class="header">
+  <nav class="navbar container">
+    <a class="btn .m-0 .p-0 btn--left" href="">
+      <span class="btn__content">
+        <span class="btn__icon">
+          <svg focusable="false" width="92" height="32" viewBox="0 0 184 64">
+            <title>FINN.no</title>
+            <path fill="#06bffc" d="M179.8 58V6c0-1-.8-1.9-1.9-1.9H66c-1 0-1.9.8-1.9 1.9v53.8H178c1 0 1.8-.8 1.8-1.8"></path>
+            <path fill="#0063fc" d="M22.5 4.2H6C5 4.2 4.2 5 4.2 6v52c0 1 .8 1.9 1.9 1.9H60V41.5C59.9 20.9 43.2 4.2 22.5 4.2"></path>
+            <path fill="#fff" d="M178 0H66c-3.3 0-6 2.7-6 6v17.4C53.2 9.6 38.9 0 22.5 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h172c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6m1.8 58c0 1-.8 1.9-1.9 1.9H64.1V6c0-1 .8-1.9 1.9-1.9h112c1 0 1.9.8 1.9 1.9v52zM4.2 58V6C4.2 5 5 4.2 6 4.2h16.5c20.6 0 37.4 16.8 37.4 37.4v18.3H6c-1-.1-1.8-.9-1.8-1.9"></path>
+            <path fill="#fff" d="M110.1 21.1h-4.2c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2V22.3c0-.6-.6-1.2-1.2-1.2m-12 0H83c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-4h7.7c.7 0 1.2-.5 1.2-1.2v-3.2c0-.7-.5-1.2-1.2-1.2h-7.7v-4.9h9.7c.7 0 1.2-.5 1.2-1.2v-3.7c0-.5-.6-1.1-1.2-1.1m62.8 0h-4.2c-.7 0-1.2.5-1.2 1.2v9.5l-6.6-10c-.3-.4-.8-.7-1.3-.7h-3.2c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-9.4l6.5 9.8c.3.4.8.7 1.3.7h3.4c.7 0 1.2-.5 1.2-1.2V22.3c-.1-.6-.6-1.2-1.3-1.2m-25.4 0h-4.2c-.7 0-1.2.5-1.2 1.2v9.5l-6.6-10c-.3-.4-.8-.7-1.3-.7H119c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-9.4l6.5 9.8c.3.4.8.7 1.3.7h3.4c.7 0 1.2-.5 1.2-1.2V22.3c-.1-.6-.6-1.2-1.3-1.2"></path>
+          </svg>
+        </span>
+        Mulighetenes marked
+      </span>
+    </a>
+
+    <a class="btn" href="">
+      <span class="btn__content">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-bell-24-part"><title>Bjelle</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.01 21.782a2.11 2.11 0 0 0 1.992 1.467c.905 0 1.725-.605 1.993-1.467M12 3V.75M12 3c4.168 0 7.5 3.492 7.5 7.619C19.5 17.777 21 19 21 19H3s1.5-1.946 1.5-8.381C4.5 6.519 7.865 3 12 3"></path></svg>
+        </span>
+        Varslinger
+      </span>
+    </a>
+
+    <a class="btn" href="">
+      <span class="btn__content">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-plus-24-part"><title>Sirkel med plusstegn</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5v9M7.5 12h9M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path></svg>        </span>
+        Ny annonse
+      </span>
+    </a>
+
+    <a class="btn" href="">
+      <span class="btn__content">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-messages-24-part"><title>Snakkebobler</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.75 18.75h-10.5l-6 4.5v-4.5h-3a1.5 1.5 0 0 1-1.5-1.5v-15a1.5 1.5 0 0 1 1.5-1.5h19.5a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-1.5 1.5"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.63 7.23a2.235 2.235 0 0 1 3.994 0m5 0a2.236 2.236 0 0 1 3.993 0m-2.637 5.535a5.747 5.747 0 0 1-7.711 0"></path></svg>        </span>
+        Meldinger
+      </span>
+    </a>
+
+    <a class="btn" href="">
+      <span class="btn__content">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="search-section">
+    <div class="search">
+      <input type="text" class="search__input" placeholder="Søk...">
+      <button class="search__button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-search-24-part"><title>Forstørrelsesglass</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.358 18.153a9.063 9.063 0 1 0-7.09-16.682 9.063 9.063 0 0 0 7.09 16.682m2.862-1.933 7.03 7.03"></path></svg>
+      </button>
+    </div>
+    <div class="search__map"></div>
+  </div>
+
+  <div class="categories">
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-sofa-42-part"><title>Sofa</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M33.567 10.5a1.9 1.9 0 0 0-1.367.585 2.04 2.04 0 0 0-.567 1.415v2c0 .265-.101.52-.283.707a.95.95 0 0 1-.683.293H11.333a.95.95 0 0 1-.683-.293 1.02 1.02 0 0 1-.283-.707v-2c0-.53-.204-1.04-.567-1.415a1.9 1.9 0 0 0-1.367-.585c-.512 0-1.004.21-1.367.585A2.04 2.04 0 0 0 6.5 12.5v4c0 1.06.407 2.078 1.133 2.828a3.8 3.8 0 0 0 2.734 1.172h21.266a3.8 3.8 0 0 0 2.735-1.172A4.07 4.07 0 0 0 35.5 16.5v-4c0-.53-.204-1.04-.566-1.415a1.9 1.9 0 0 0-1.367-.585m-23.2 10v3m21.266-3v3m-23.2-13c0-1.591.611-3.117 1.699-4.243A5.7 5.7 0 0 1 14.233 4.5h13.534a5.7 5.7 0 0 1 4.1 1.757 6.1 6.1 0 0 1 1.7 4.243M21 15.5v-11"></path></svg>
+        </span>       
+          Torget
+
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-real-estate-42-part"><title>Hus med hage</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.714 13.143 23.571 2.857 36.43 13.143m-23.144 12V11.086m0 12.342c0-.946-.768-1.714-1.715-1.714h-.857a3.429 3.429 0 1 0-3.429 3.429h30.858"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M33.857 25.143V6.286H30.43v2.057m-4.287 15.943v-5.143a.857.857 0 0 0-.857-.857h-3.429a.857.857 0 0 0-.857.857v5.143m0-11.357v-2.143c0-.592.493-1.072 1.102-1.072h2.939c.608 0 1.102.48 1.102 1.072v2.143c0 .591-.494 1.071-1.102 1.071h-2.939C21.493 14 21 13.52 21 12.93Z"></path></svg>
+        </span>
+        Eiendom
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-airplane-42-part"><title>Fly</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.286 14.143h-4.408a3.3 3.3 0 0 1-1.688-.414c-.52-.287-.96-.71-1.277-1.227L3.857 3.857H7.2l4.68 3.429h22.835a3.429 3.429 0 0 1 0 6.857h-8.571"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18.061 12.428-2.204 1.715 2.204 1.714h8.082v-3.428h-8.082Zm-7.346-1.714h-6m24.857 15.428a2.571 2.571 0 1 1 1.844-4.362 3.428 3.428 0 1 1 3.298 4.362zM9 18.428a2.57 2.57 0 0 0-2.514 2.02 1.67 1.67 0 0 0-.914-.305 1.715 1.715 0 0 0 0 3.428H9a2.571 2.571 0 1 0 0-5.143"></path></svg>
+        </span>        
+          Reise
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-sailboat-42-part"><title>To fugler og en seilebåt på vannet</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m33 23.428 3.119-6.236a.43.43 0 0 0-.383-.62H6.266a.43.43 0 0 0-.384.62L9 23.428"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.857 25.073c1.241.168 2.5.031 3.687-.402a8.3 8.3 0 0 0 3.17-2.1 7 7 0 0 0 2.329 1.849c.886.43 1.845.653 2.814.653s1.928-.222 2.814-.653A7 7 0 0 0 21 22.57a7 7 0 0 0 2.329 1.849c.886.43 1.844.653 2.814.653s1.928-.222 2.814-.653a7 7 0 0 0 2.329-1.849 8.3 8.3 0 0 0 3.17 2.1 7.7 7.7 0 0 0 3.64.409M10.732 3.733l1.696 1.696 1.696-1.696M5.592 8.878l1.694 1.693 1.693-1.693M21 2.857l12 10.286H21zm0 13.714v-3.428"></path></svg>
+        </span>      
+          Båt
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-motorcycle-42-part"><title>MC</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M33.857 9.16v2.054m4.286 9.036c0 2.722-2.303 4.929-5.143 4.929s-5.143-2.207-5.143-4.929S30.16 15.322 33 15.322s5.143 2.206 5.143 4.928m-24 0c0 2.722-2.303 4.929-5.143 4.929s-5.143-2.207-5.143-4.929S6.159 15.322 9 15.322s5.143 2.206 5.143 4.928m0-8.214h6l1.24-2.378c.29-.556.884-.908 1.534-.908h8.369"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.286 9.571H12l2.143 2.465 3.428 4.107v4.107h5.143l3.429-6.571 5.143-2.054V8.75m-13.714 7.393-3.858 1.643M31.286 8.75l-6-4.107m5.143 11.089-1.715-2.875"></path></svg>
+        </span>      
+          
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+
+    <a class="btn btn--category" href="">
+      <span class="btn__content ">
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-circle-user-24-part"><title>Sirkel med brukerprofil</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"></path></svg>        </span>
+        Logg inn
+      </span>
+    </a>
+  </div>
+</main>
+
 </body>
+
 </html>
