@@ -1,12 +1,6 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
+@use 'common';
 
 body {
     font-family: Arial, sans-serif;
@@ -15,11 +9,20 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    padding: 0 16px;
+    max-width: 1010px;
+    padding: 0 31px;
     margin: 0 auto;
 }
 
 .search-section {
-    padding: 32px 0 0 0;
+    padding: 31px 0 0 0;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(10.4rem, 1fr));
+    margin: 1rem 0 0 0;
+    .btn {
+        padding: 16px 4px;
+    }
 }
