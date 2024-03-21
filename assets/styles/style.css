@@ -13,3 +13,39 @@ html, body {
 ¨ html {
   color: #111;
 }/*# sourceMappingURL=style.css.map */
+
+:root {
+  --light-blue: #e9f5fd;
+  --dark-blue: #005580;
+  --primary-color: #007bff;
+}
+
+
+.phone-section {
+  width: 40%;
+  background-color: var(--light-blue);
+  padding: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.phone-section__image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+.phone-section__text {
+  color: var(--dark-blue);
+  margin-bottom: 0.5rem;
+}
+
+.phone-section__link {
+  text-decoration: none;
+}
+
+.phone-section__link:hover {
+  text-decoration: underline;
+}
