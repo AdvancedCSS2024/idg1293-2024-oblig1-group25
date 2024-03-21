@@ -7,11 +7,36 @@ html, body {
 }
 
 .body-wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   padding: 2.5rem;
+}
+
+.card-holder__link-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.card-holder__item {
+  height: 68px;
+  padding-top: 32px;
+  padding-bottom: 0;
+  justify-content: center;
+  overflow-x: hidden;
+  gap: 16px;
+}
+.card-holder__link {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+}
+.card-holder__link:hover {
+  text-decoration: underline;
 }
 
 .card {
