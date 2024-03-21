@@ -1,90 +1,118 @@
-.login-form {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
   max-width: 400px;
   margin: 0 auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
   border-radius: 9px;
 }
-.login-form__header {
-  margin-bottom: 2rem;
+.card__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 85px;
   padding: 0 2rem;
 }
-.login-form__logo {
+.card__logo {
   height: 24px;
 }
-.login-form__title {
-  color: #0055a4;
+.card__title {
   font-size: 1.5rem;
   font-style: normal;
   line-height: 130%;
+  margin: 0;
 }
-.login-form__body {
-  padding: 2rem;
+.card__body {
+  padding: 0 2rem 2rem 2rem;
 }
-.login-form__body .form-group {
+.card__body__forgot-password {
+  margin-bottom: 2rem;
+  text-align: right;
+}
+.card__body__forgot-password a {
+  color: #1d72db;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.card__body__forgot-password a:hover {
+  text-decoration: underline;
+}
+.card__submit {
   margin-bottom: 1rem;
 }
-.login-form__body .form-group__label {
+.card__footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+.card__footer__create-account {
+  color: #1d72db;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.card__footer__create-account:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn--primary {
+  width: 100%;
+  background-color: #1d72db;
+  color: white;
+}
+.btn--primary:hover {
+  background-color: #175bae;
+}
+.btn--primary:focus {
+  outline: none;
+  background-color: #458de6;
+}
+
+.btn--primary-txt {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #1d72db;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn--primary-txt:hover {
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 5px, rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(0, 0, 0, 0.14) 0px 0px 4px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group__label {
   display: block;
   color: #333;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
-.login-form__body .form-group__input {
+.form-group__input-wrapper {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 0.9rem;
-  color: #333;
+  background-color: rgba(0, 0, 0, 0.09);
+  position: relative;
+  display: flex;
 }
-.login-form__body__forgot-password {
-  margin-bottom: 2rem;
-  text-align: right;
-}
-.login-form__body__forgot-password a {
-  color: #0055a4;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-.login-form__body__forgot-password a:hover {
-  text-decoration: underline;
-}
-.login-form__body__submit {
-  margin-bottom: 1rem;
-}
-.login-form__body__button {
+.form-group__input {
   width: 100%;
-  padding: 1rem;
-  border: none;
-  border-radius: 4px;
-  background-color: #0055a4;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid transparent;
-}
-.login-form__body__button:hover {
-  background-color: #003b71;
-}
-.login-form__body__button:focus {
-  outline: none;
-  border-color: #d32f2f;
-}
-.login-form__footer {
-  text-align: center;
-  margin-top: 2rem;
-}
-.login-form__footer__create-account {
-  color: #0055a4;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-.login-form__footer__create-account:hover {
-  text-decoration: underline;
+  color: red;
 }/*# sourceMappingURL=common.css.map */
