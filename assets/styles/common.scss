@@ -1,3 +1,182 @@
 // YOU MUST USE BEM HERE
-// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
+// IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
 // Example: input, button, card ...
+
+$primary-color: #1d72db;
+$font-color: #333;
+$gray-background-color: rgba(0, 0, 0, 0.09);
+$font-stack: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: $font-stack;
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 9px 46px 8px rgba(0, 0, 0, .12), 0 24px 38px 3px rgba(0, 0, 0, .14);
+    border-radius: 9px;
+
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        padding: 0 2rem;
+    }
+
+    &__logo {
+        height: 24px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-style: normal;
+        line-height: 130%;
+        margin: 0;
+    }
+
+    &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 475px;
+    padding: 0 2rem 2.5rem;
+
+        &__forgot-password {
+            margin-bottom: 2rem;
+            text-align: right;
+
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                font-size: 0.9rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__submit {
+        margin-bottom: 1rem;
+    }
+
+    &__footer {
+        text-align: center;
+        margin-top: 2rem;
+
+        &__create-account {
+            color: $primary-color;
+            text-decoration: none;
+            font-size: 0.9rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.btn {
+    background: none;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn--primary {
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+
+    &:focus {
+        outline: none;
+        background-color: lighten($primary-color, 10%);
+    }
+}
+
+.btn--primary-txt {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    background-color: transparent;
+    color: $primary-color;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: transparent;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 5px, rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(0, 0, 0, 0.14) 0px 0px 4px;
+    }
+
+}
+
+.btn--small {
+    padding: 0px;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+
+	&__label {
+		display: flex;
+		color: $font-color;
+		font-size: 0.9rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__input-wrapper {
+		padding: 0.75rem;
+		border-radius: 4px;
+		font-size: 0.9rem;
+        background-color: $gray-background-color;
+        position: relative;
+        border-color: #ccc;
+	}
+
+	&__input {
+        width: 100%;
+        background: none;
+        border: none;
+	}
+    
+&__input-root{
+    width: 100%;
+    display: flex;
+}
+}
+
+.RememberMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.checkbox__input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}

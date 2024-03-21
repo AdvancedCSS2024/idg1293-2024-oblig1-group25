@@ -3,9 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/common.css" />
+  <link rel="stylesheet" href="assets/styles/style.scss">
   <title>Screenshot 1 page</title>
-</head>
-<body>
-  
+  <body>
+    <div class="card">
+        <div class="card__header">
+            <img class="card__logo" src="misc/5087dc1b421c7a0b79000000_56e7c4e3c1c45.png" alt="Finn logo">
+            <img class="card__logo" src="misc/4c671371b02d586f499a4d89bf58fa50.png" alt="Shibsted logo">
+        </div>
+        <div class="card__body">
+            <form action="/login-goes-here">
+                <!--for logg inn--> 
+                <div class="form-group">
+                    <h1 class="login-form__title">Logg inn</h1>
+
+                    <div class="form-group__input-wrapper">
+                        <input type="email" id="email" class="form-group__input" required />
+                        <label for="email" class="form-group__label">Skriv inn din e-postadresse *</label>
+                    </div>
+                </div>
+                <!--for password-->
+                <div class="form-group">
+                    <label class="form-group__label" for="password">Vennligst oppgi passordet ditt *</label>
+                    <div class="form-group__input-wrapper">
+                        <div class="form-group__input-root">
+                        <input class="form-group__input" type="text" id="password" required>
+                        <button class="btn btn--small" aria-label="show password">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <g clip-path="url(#XzHLcclip0_1199_68)">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M23.38 10.38C20.7 7.434 16.344 4.434 12 4.5 7.656 4.435 3.301 7.435.624 10.38l-.002.003a2.413 2.413 0 000 3.23l.002.002c2.617 2.882 6.96 5.951 11.376 5.883 4.417.068 8.76-3 11.38-5.883l.002-.002a2.413 2.413 0 000-3.23l-.003-.003zM1.501 11.998c0-.225.083-.442.234-.61 2.562-2.82 6.539-5.45 10.252-5.387h.025c3.713-.063 7.69 2.567 10.255 5.387a.913.913 0 010 1.22c-2.51 2.763-6.476 5.454-10.255 5.39H11.987c-3.778.064-7.743-2.627-10.251-5.39a.913.913 0 01-.234-.61zM12 8.999a3 3 0 013 3 3 3 0 11-3-3zm1.722-1.158A4.499 4.499 0 0012 7.5L16.5 12a4.499 4.499 0 00-2.778-4.159zM9.5 8.257A4.5 4.5 0 0112 7.5L16.5 12a4.5 4.5 0 11-7-3.743z"
+                                        clip-rule="evenodd"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="XzHLcclip0_1199_68">
+                                        <path fill="currentColor" d="M0 0h24v24H0z"></path>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </form>
+
+    <div class="login-form__forgot-password">
+        <a href="#">Glemt passord?</a>
+    </div>
+
+    <div class="RememberMe">
+        <div class="checkbox-box">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" id="checkbox1">
+                <span class="checkbox__label">Hold meg innlogget</span>
+              </label>             
+        </div>
+        <div>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><g clip-path="url(#rxwIyclip0_148_294)"><path fill="currentColor" fill-rule="evenodd" d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></g><defs><clipPath id="rxwIyclip0_148_294"><path fill="currentColor" d="M0 0h16v16H0z" transform="rotate(-180 8 8)"></path></clipPath></defs></svg>
+              </span> 
+        </div>
+    </div>
+
+    <div class="login-form__submit">
+        <button type="submit" class="btn btn--primary">Opprette ny bruker</button>
+    </div>
+    <div class="login-form__footer">
+        <button class="btn btn--primary-txt">Logg på</button>
+            </div>
+    </div>
+    </div>
 </body>
 </html>
