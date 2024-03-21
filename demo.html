@@ -20,17 +20,19 @@
                 <!--for logg inn-->
                 <div class="form-group">
                     <h1 class="login-form__title">Logg inn</h1>
-                    <label for="email" class="form-group__label">Skriv inn din e-postadresse *</label>
+
                     <div class="form-group__input-wrapper">
                         <input type="email" id="email" class="form-group__input" required />
+                        <label for="email" class="form-group__label">Skriv inn din e-postadresse *</label>
                     </div>
                 </div>
                 <!--for password-->
                 <div class="form-group">
                     <label class="form-group__label" for="password">Vennligst oppgi passordet ditt *</label>
                     <div class="form-group__input-wrapper">
+                        <div class="form-group__input-root">
                         <input class="form-group__input" type="text" id="password" required>
-                        <button class="btn" aria-label="show password">
+                        <button class="btn btn--small" aria-label="show password">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                 viewBox="0 0 24 24">
                                 <g clip-path="url(#XzHLcclip0_1199_68)">
@@ -46,6 +48,7 @@
                             </svg>
                         </button>
                     </div>
+                    </div>
                 </div>
             </form>
 
@@ -54,13 +57,17 @@
     </div>
 
     <div class="RememberMe">
-        <div>
+        <div class="checkbox-box">
             <label class="checkbox">
                 <input type="checkbox" class="checkbox__input" id="checkbox1">
                 <span class="checkbox__label">Hold meg innlogget</span>
-              </label>              
+              </label>             
         </div>
-        
+        <div>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><g clip-path="url(#rxwIyclip0_148_294)"><path fill="currentColor" fill-rule="evenodd" d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></g><defs><clipPath id="rxwIyclip0_148_294"><path fill="currentColor" d="M0 0h16v16H0z" transform="rotate(-180 8 8)"></path></clipPath></defs></svg>
+              </span> 
+        </div>
     </div>
 
     <div class="login-form__submit">

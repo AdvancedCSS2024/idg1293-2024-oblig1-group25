@@ -29,7 +29,11 @@ html, body {
   margin: 0;
 }
 .card__body {
-  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 475px;
+  padding: 0 2rem 2.5rem;
 }
 .card__body__forgot-password {
   margin-bottom: 2rem;
@@ -60,6 +64,7 @@ html, body {
 }
 
 .btn {
+  background: none;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -71,6 +76,8 @@ html, body {
   width: 100%;
   background-color: #1d72db;
   color: white;
+  margin-top: 1rem;
+  text-align: center;
 }
 .btn--primary:hover {
   background-color: #175bae;
@@ -83,6 +90,7 @@ html, body {
 .btn--primary-txt {
   width: 100%;
   padding: 1rem;
+  margin-top: 1rem;
   border-radius: 4px;
   background-color: transparent;
   color: #1d72db;
@@ -94,25 +102,50 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 5px, rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(0, 0, 0, 0.14) 0px 0px 4px;
 }
 
+.btn--small {
+  padding: 0px;
+}
+
 .form-group {
   margin-bottom: 1rem;
 }
 .form-group__label {
-  display: block;
+  display: flex;
   color: #333;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 .form-group__input-wrapper {
-  width: 100%;
   padding: 0.75rem;
   border-radius: 4px;
   font-size: 0.9rem;
   background-color: rgba(0, 0, 0, 0.09);
   position: relative;
-  display: flex;
+  border-color: #ccc;
 }
 .form-group__input {
   width: 100%;
-  color: red;
+  background: none;
+  border: none;
+}
+.form-group__input-root {
+  width: 100%;
+  display: flex;
+}
+
+.RememberMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.checkbox__input {
+  display: inline-block;
+  width: 20px; /* Custom width */
+  height: 20px; /* Custom height, making it square */
+  border: 2px solid #555; /* Custom border */
+  border-radius: 4px; /* Rounded corners */
+  position: relative;
+  cursor: pointer;
 }/*# sourceMappingURL=common.css.map */
