@@ -9,7 +9,8 @@
   <title>Demo page</title>
 </head>
 
-<nav class="navbar container">
+<body>
+  <nav class="navbar container">
     <a class="btn btn--nav .m-0 .p-0 btn--left" href="">
       <span class="btn__content">
         <span class="btn__icon">
@@ -59,68 +60,82 @@
     </a>
   </nav>
 
-<body>
-    <body>
-        <div class="component-demo">
-            <!-- Card Component -->
-            <section class="component-demo__section">
-                <h2 class="component-demo__heading">Card Component</h2>
-                <div class="card">
-                    <div class="card__header">
-                        <!-- Images could be placeholders if the original ones are not available -->
-                        <img class="card__logo" src="placeholder-logo1.png" alt="Logo 1">
-                        <img class="card__logo" src="placeholder-logo2.png" alt="Logo 2">
-                    </div>
-                    <div class="card__body">
-                        <p>something</p>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- Form Input Fields -->
-            <section class="component-demo__section">
-                <h2 class="component-demo__heading">Form Input Fields</h2>
-                <div class="form-group">
-                    <label for="demo-email" class="form-group__label">Email Address *</label>
-                    <input type="email" id="demo-email" class="form-group__input" placeholder="example@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="demo-password" class="form-group__label">Password *</label>
-                    <input type="password" id="demo-password" class="form-group__input">
-                </div>
-            </section>
-    
-            <!-- Buttons -->
-            <section class="component-demo__section">
-                <h2 class="component-demo__heading">Buttons</h2>
-                <button class="btn btn--primary">Primary Button</button>
-                <button class="btn btn--secondary">Secondary Button</button>
-                <button class="btn btn--small" aria-label="show password">
-                    <button class="btn btn--primary-txt">Logg på</button>
-                    <button class="btn btn--small">
-                        <svg class="btn--small__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><g clip-path="url(#rxwIyclip0_148_294)"><path fill="currentColor" fill-rule="evenodd" d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></g><defs><clipPath id="rxwIyclip0_148_294"><path fill="currentColor" d="M0 0h16v16H0z" transform="rotate(-180 8 8)"></path></clipPath></defs></svg>
-                      </button>
-            </section>
-    
-            <!-- Checkbox Component -->
-            <section class="component-demo__section">
-                <h2 class="component-demo__heading">Checkbox</h2>
-                <label class="checkbox">
-                    <input type="checkbox" class="checkbox__input">
-                    <span class="checkbox__label">Keep me logged in</span>
-                </label>
-            </section>
-    
-            <!-- Links -->
-            <section class="component-demo__section">
-                <h2 class="component-demo__heading">Links</h2>
-                <a href="#" class="link">Find Help Here</a>
-                <br>
-                <a href="#" class="link">Back to Home</a>
-            </section>
+  <main class="demo container">
+      <!-- Card Component -->
+      <section>
+        <h2 class="component-demo__heading">Card Component</h2>
+        <div class="card card--shadow">
+          <div class="card__header">
+            <img class="card__logo" src="placeholder-logo1.png" alt="Logo 1">
+            <img class="card__logo" src="placeholder-logo2.png" alt="Logo 2">
+          </div>
+          <div class="card__body">
+            <p>something</p>
+          </div>
         </div>
-    </body>
-    </html>
+
+      </section>
+  
+      <!-- Form Input Fields -->
+      <section>
+
+        <h2 class="component-demo__heading">Form Input Fields</h2>
+        <div class="form-group">
+          <label for="demo-email" class="form-group__label">Email Address *</label>
+          <input type="email" id="demo-email" class="form-group__input" placeholder="example@example.com">
+        </div>
+        <div class="form-group">
+          <label for="demo-password" class="form-group__label">Password *</label>
+          <input type="password" id="demo-password" class="form-group__input">
+        </div>
+
+      </section>
+  
+      <!-- Buttons -->
+      <section>
+
+        <h2 class="component-demo__heading">Buttons</h2>
+        <button class="btn btn--primary">Primary Button</button>
+        <button class="btn btn--secondary">Secondary Button</button>
+        <button class="btn btn--small" aria-label="show password">
+          <button class="btn btn--primary-txt">Logg på</button>
+          <button class="btn btn--small">
+            <svg class="btn--small__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+              viewBox="0 0 16 16">
+              <g clip-path="url(#rxwIyclip0_148_294)">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z"
+                  clip-rule="evenodd"></path>
+              </g>
+              <defs>
+                <clipPath id="rxwIyclip0_148_294">
+                  <path fill="currentColor" d="M0 0h16v16H0z" transform="rotate(-180 8 8)"></path>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+
+      </section>
+  
+      <!-- Checkbox Component -->
+      <section>
+        <h2 class="component-demo__heading">Checkbox</h2>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input">
+          <span class="checkbox__label">Keep me logged in</span>
+        </label>
+      </section>
+  
+      <section>
+        <h2 class="component-demo__heading">Links</h2>
+        <a href="#" class="link">Find Help Here</a>
+        <br>
+        <a href="#" class="link">Back to Home</a>
+      </section>
+  </main>
+
 </body>
+
+</html>
 
 </html>

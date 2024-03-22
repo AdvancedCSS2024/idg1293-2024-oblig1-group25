@@ -205,20 +205,17 @@ body {
   min-height: 475px;
   padding: 0 2rem 2.5rem;
 }
-.card__body__forgot-password {
+.card__forgot-password {
   margin-bottom: 2rem;
   text-align: right;
 }
-.card__body__forgot-password a {
+.card__forgot-password a {
   color: #1d72db;
   text-decoration: none;
   font-size: 0.9rem;
 }
-.card__body__forgot-password a:hover {
+.card__forgot-password a:hover {
   text-decoration: underline;
-}
-.card__body--shadow {
-  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
 }
 .card__submit {
   margin-bottom: 1rem;
@@ -227,13 +224,16 @@ body {
   text-align: center;
   margin-top: 2rem;
 }
-.card__footer__create-account {
+.card__create-account {
   color: #1d72db;
   text-decoration: none;
   font-size: 0.9rem;
 }
-.card__footer__create-account:hover {
+.card__create-account:hover {
   text-decoration: underline;
+}
+.card--shadow {
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
 }
 
 .advert {
@@ -334,6 +334,11 @@ body {
   margin-top: 1rem;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
 .checkbox__input {
   display: inline-block;
   width: 20px;
@@ -347,6 +352,12 @@ body {
 body {
   background-color: #ffffff;
   margin: 0;
+}
+
+.demo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 
 .container {

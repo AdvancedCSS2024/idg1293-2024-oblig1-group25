@@ -239,24 +239,20 @@ body {
     justify-content: space-between;
     min-height: 475px;
     padding: 0 2rem 2.5rem;
+  }
+  
+  &__forgot-password {
+    margin-bottom: 2rem;
+    text-align: right;
 
-    &__forgot-password {
-      margin-bottom: 2rem;
-      text-align: right;
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 0.9rem;
 
-      a {
-        color: $primary-color;
-        text-decoration: none;
-        font-size: 0.9rem;
-
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
-    }
-    &--shadow {
-      box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
-        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
     }
   }
 
@@ -267,16 +263,21 @@ body {
   &__footer {
     text-align: center;
     margin-top: 2rem;
+  }
 
-    &__create-account {
-      color: $primary-color;
-      text-decoration: none;
-      font-size: 0.9rem;
+  &__create-account {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 0.9rem;
 
-      &:hover {
-        text-decoration: underline;
-      }
+    &:hover {
+      text-decoration: underline;
     }
+  }
+
+  &--shadow {
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+      0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
   }
 }
 
@@ -385,12 +386,19 @@ body {
   margin-top: 1rem;
 }
 
-.checkbox__input {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #555;
-  border-radius: 4px;
-  position: relative;
-  cursor: pointer;
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  &__input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+  }
 }
+
