@@ -41,7 +41,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  &--primary {
+  &--bg-primary {
     width: 100%;
     background-color: $primary-color;
     color: white;
@@ -52,6 +52,10 @@ body {
     &:focus {
       background-color: $primary-color;
     }
+  }
+
+  &--primary {
+    color:$primary-color;
   }
 
   &--text {
@@ -263,6 +267,9 @@ body {
   &__footer {
     text-align: center;
     margin-top: 2rem;
+    &--color {
+      background: #000;
+    }
   }
 
   &__create-account {
@@ -308,15 +315,6 @@ body {
       border: 2px solid $gray-color;
     }
   }
-  &__price {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 800;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    z-index: 2; // Ensures the price is visible above the image
-  }
   &__heart {
     z-index: 999;
     position: absolute;
@@ -341,6 +339,15 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: $font-color;
+  }
+  &__price {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 2;
   }
 
   &:hover {

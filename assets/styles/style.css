@@ -34,15 +34,18 @@ body {
   justify-content: center;
   align-items: center;
 }
-.btn--primary {
+.btn--bg-primary {
   width: 100%;
   background-color: #1d72db;
   color: white;
   margin-top: 1rem;
   text-align: center;
 }
-.btn--primary:hover, .btn--primary:focus {
+.btn--bg-primary:hover, .btn--bg-primary:focus {
   background-color: #1d72db;
+}
+.btn--primary {
+  color: #1d72db;
 }
 .btn--text {
   color: #1d72db;
@@ -224,6 +227,9 @@ body {
   text-align: center;
   margin-top: 2rem;
 }
+.card__footer--color {
+  background: #000;
+}
 .card__create-account {
   color: #1d72db;
   text-decoration: none;
@@ -262,15 +268,6 @@ body {
   border-radius: 1rem;
   border: 2px solid #80808a;
 }
-.advert__price {
-  color: white;
-  font-size: 1.5em;
-  font-weight: 800;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  z-index: 2;
-}
 .advert__heart {
   z-index: 999;
   position: absolute;
@@ -295,6 +292,15 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #333;
+}
+.advert__price {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 800;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
 }
 .advert:hover {
   background-color: rgba(29, 114, 219, 0.1294117647);
@@ -354,16 +360,30 @@ body {
   margin: 0;
 }
 
-.demo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-}
-
 .container {
   max-width: 1010px;
   padding: 0 31px;
   margin: 0 auto;
+}
+
+.demo {
+  margin: 2rem auto;
+  border: 1px solid #80808a;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.demo h2 {
+  font-size: 2rem;
+}
+.demo section {
+  padding: 2rem;
+  border: 1px solid #80808a;
+}
+.demo .buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .search-section {
