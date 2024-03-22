@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<div class="header">
   <nav class="navbar container">
     <a class="btn btn--nav .m-0 .p-0 btn--left" href="">
       <span class="btn__content">
@@ -59,6 +60,8 @@
       </span>
     </a>
   </nav>
+</div>
+ 
 
   <main class="demo container">
       <!-- Card Component -->
@@ -88,50 +91,123 @@
           <label for="demo-password" class="form-group__label">Password *</label>
           <input type="password" id="demo-password" class="form-group__input">
         </div>
-
-      </section>
-  
-      <!-- Buttons -->
-      <section>
+        <h2 class="component-demo__heading">Links</h2>
+        <a href="#" class="link">Find Help Here</a>
+        <br>
+        <a href="#" class="link">Back to Home</a>
 
         <h2 class="component-demo__heading">Buttons</h2>
-        <button class="btn btn--primary">Primary Button</button>
-        <button class="btn btn--secondary">Secondary Button</button>
-        <button class="btn btn--small" aria-label="show password">
-          <button class="btn btn--primary-txt">Logg på</button>
-          <button class="btn btn--small">
-            <svg class="btn--small__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
-              viewBox="0 0 16 16">
-              <g clip-path="url(#rxwIyclip0_148_294)">
-                <path fill="currentColor" fill-rule="evenodd"
-                  d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z"
-                  clip-rule="evenodd"></path>
-              </g>
-              <defs>
-                <clipPath id="rxwIyclip0_148_294">
-                  <path fill="currentColor" d="M0 0h16v16H0z" transform="rotate(-180 8 8)"></path>
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
+        <div class="buttons">
+          <button class="btn btn--primary">Primary</button>
 
-      </section>
+          <button class="btn btn--small" aria-label="show password">
+
+            <button class="btn btn--primary-txt">secondary</button>
+            <button class="btn btn--small">
+              <svg class="btn--small__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                viewBox="0 0 16 16">
+                <g clip-path="url(#rxwIyclip0_148_294)">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M8 14.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5zM15.75 8A7.75 7.75 0 11.25 8a7.75 7.75 0 0115.5 0zM8 12.75a.75.75 0 01-.75-.75V8a.75.75 0 011.5 0v4a.75.75 0 01-.75.75zM8 4a1 1 0 100 2 1 1 0 000-2z"
+                    clip-rule="evenodd"></path>
+                </g>
+                <defs>
+                  <clipPath id="rxwIyclip0_148_294">
+                    <path fill="currentColor" d="M0 0h16v16H0z" transform="rotate(-180 8 8)"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
   
-      <!-- Checkbox Component -->
-      <section>
+            <a class="btn btn--category" href="">
+              <span class="btn__content ">
+                <span class="btn__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
+                    part="w-icon-real-estate-42-part">
+                    <title>Hus med hage</title>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10.714 13.143 23.571 2.857 36.43 13.143m-23.144 12V11.086m0 12.342c0-.946-.768-1.714-1.715-1.714h-.857a3.429 3.429 0 1 0-3.429 3.429h30.858">
+                    </path>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M33.857 25.143V6.286H30.43v2.057m-4.287 15.943v-5.143a.857.857 0 0 0-.857-.857h-3.429a.857.857 0 0 0-.857.857v5.143m0-11.357v-2.143c0-.592.493-1.072 1.102-1.072h2.939c.608 0 1.102.48 1.102 1.072v2.143c0 .591-.494 1.071-1.102 1.071h-2.939C21.493 14 21 13.52 21 12.93Z">
+                    </path>
+                  </svg>
+                </span>
+                Category
+              </span>
+            </a>
+    
+            <a class="btn btn--nav" href="">
+              <span class="btn__content">
+                <span class="btn__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+                    part="w-icon-bell-24-part">
+                    <title>Bjelle</title>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M10.01 21.782a2.11 2.11 0 0 0 1.992 1.467c.905 0 1.725-.605 1.993-1.467M12 3V.75M12 3c4.168 0 7.5 3.492 7.5 7.619C19.5 17.777 21 19 21 19H3s1.5-1.946 1.5-8.381C4.5 6.519 7.865 3 12 3">
+                    </path>
+                  </svg>
+                </span>
+                Navigation
+              </span>
+            </a>
+  
+        </div>
+
         <h2 class="component-demo__heading">Checkbox</h2>
         <label class="checkbox">
           <input type="checkbox" class="checkbox__input">
           <span class="checkbox__label">Keep me logged in</span>
         </label>
+
+      </section>
+    
+
+       
       </section>
   
+
+
       <section>
-        <h2 class="component-demo__heading">Links</h2>
-        <a href="#" class="link">Find Help Here</a>
-        <br>
-        <a href="#" class="link">Back to Home</a>
+        <div class="advert">
+          <div class="advert__wrapper">
+            <a href="#" class="advert__heart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>          </a>
+            <span class="advert__price">10.000 Kr</span>
+            <div class="advert__img">
+              <img src="https://images.finncdn.no/dynamic/default/2024/3/vertical-0/20/6/344/921/696_1b37a4cc-b4db-4847-90d8-dbdfbf1ebd60.jpg" alt="">
+            </div>
+          </div>
+          <div class="advert__location">
+            lundsnes
+          </div>
+          <div class="advert__title">
+            brukt kjøkken inredning selges
+          </div>
+        </div>
       </section>
+
+      <section>
+        <div class="search-section">
+          <div class="search">
+            <input type="text" class="search__input" placeholder="Søk etter peis eller pulsklokke">
+            <button class="search__button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+                part="w-icon-search-24-part">
+                <title>Forstørrelsesglass</title>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M13.358 18.153a9.063 9.063 0 1 0-7.09-16.682 9.063 9.063 0 0 0 7.09 16.682m2.862-1.933 7.03 7.03">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <a class="search__map" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#818B9A" fill-rule="evenodd" d="M21.551 4.647L15.986 2.42v6.114a.75.75 0 11-1.5 0V2.421L8.764 4.71v13.912l2.582-1.033a.75.75 0 01.557 1.393l-3.24 1.296a1.75 1.75 0 01-1.3 0l-6.221-2.49a1.75 1.75 0 01-1.1-1.624V2.79a1.75 1.75 0 012.4-1.625L7.92 3.357a.25.25 0 00.186 0L14.586.765a1.75 1.75 0 011.3 0l6.222 2.49c.665.265 1.1.908 1.1 1.624v4.379a.75.75 0 01-1.5 0V4.879a.25.25 0 00-.157-.232zM7.264 4.71l-5.38-2.152a.25.25 0 00-.342.232v13.374a.25.25 0 00.157.232l5.565 2.226V4.71zm10.86 7.103a3.583 3.583 0 00-3.582 3.583c0 .42.191 1.042.568 1.807.365.743.863 1.537 1.378 2.272a26.001 26.001 0 001.637 2.098 25.974 25.974 0 001.637-2.099c.515-.734 1.012-1.528 1.378-2.27.377-.766.568-1.388.568-1.808a3.583 3.583 0 00-3.583-3.583zm-5.082 3.583a5.083 5.083 0 0110.166 0c0 .777-.322 1.656-.722 2.47-.412.836-.955 1.698-1.495 2.47-.542.773-1.09 1.47-1.522 1.977a12.44 12.44 0 01-.557.618 3.353 3.353 0 01-.217.206c-.033.027-.08.065-.134.1a.782.782 0 01-.872 0 1.273 1.273 0 01-.134-.1 3.327 3.327 0 01-.217-.206 12.44 12.44 0 01-.557-.618 27.474 27.474 0 01-1.522-1.978c-.54-.771-1.084-1.633-1.495-2.47-.4-.813-.723-1.692-.723-2.469zm6.527 0a1.444 1.444 0 11-2.889 0 1.444 1.444 0 012.89 0z" clip-rule="evenodd"></path></svg>
+            Kart
+          </a>
+        </div>
+      </section>
+
   </main>
 
 </body>
