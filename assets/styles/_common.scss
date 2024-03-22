@@ -42,8 +42,9 @@ body {
   align-items: center;
 
   &--small {
-    &:hover{background-color: $gray-background-color;
-    } 
+    &:hover {
+      background-color: $gray-background-color;
+    }
   }
 
   &--primary {
@@ -75,7 +76,7 @@ body {
   }
 
   &--primary {
-    color:$primary-color;
+    color: $primary-color;
   }
 
   &--text {
@@ -120,6 +121,7 @@ body {
     &:hover {
       .btn__content {
         color: $font-color;
+
         .btn__icon {
           color: $font-color;
           opacity: 0.5;
@@ -128,13 +130,16 @@ body {
     }
   }
 
+
   &--nav {
     border: 0;
     border-radius: 0;
     border-bottom: 2px solid transparent;
+
     .btn__content {
       font-weight: 700;
     }
+
     &:hover {
       border-color: $primary-color;
     }
@@ -145,7 +150,7 @@ body {
     padding: 0;
     margin-right: auto;
   }
-
+}
 
 .navbar {
   height: 49px;
@@ -164,6 +169,7 @@ body {
     width: 100%;
     display: block;
     font-size: 1.6rem;
+
     &:focus-visible {
       outline: 2px solid #38bdf8;
     }
@@ -269,7 +275,7 @@ body {
     font-size: 16px;
     line-height: 22px;
   }
-  
+
   &__forgot-password {
     margin-bottom: 2rem;
     text-align: right;
@@ -293,7 +299,7 @@ body {
     text-align: center;
     margin-top: 2rem;
 
-    &--color{
+    &--color {
       color: blue;
       background-color: #ccc
     }
@@ -334,6 +340,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+
     img {
       width: 100%;
       height: 100%;
@@ -342,6 +349,7 @@ body {
       border: 2px solid $gray-color;
     }
   }
+
   &__heart {
     z-index: 999;
     position: absolute;
@@ -351,22 +359,26 @@ body {
     border-radius: 100%;
     width: 4.5rem;
     height: 4.5rem;
+
     &:hover {
       background-color: #1d72db46;
     }
   }
+
   &__location {
     color: $font-color;
-    padding:6px 0;
+    padding: 6px 0;
     font-size: 12px;
     line-height: 16px;
   }
+
   &__title {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: $font-color;
   }
+
   &__price {
     color: white;
     font-size: 1.5em;
@@ -405,6 +417,7 @@ body {
     width: 100%;
     background: none;
     border: none;
+
     &:focus-visible {
       outline: transparent;
     }
@@ -433,12 +446,13 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
+
     &:focus-visible {
       outline: 2px solid #38bdf8;
     }
+
     border-radius: 4px;
     position: relative;
     cursor: pointer;
   }
 }
-
