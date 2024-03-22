@@ -34,15 +34,30 @@ body {
   justify-content: center;
   align-items: center;
 }
+.btn--small:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
 .btn--primary {
   width: 100%;
-  background-color: #1d72db;
   color: white;
+  background-color: #1d72db;
   margin-top: 1rem;
   text-align: center;
+  padding: 1.5rem;
 }
 .btn--primary:hover, .btn--primary:focus {
-  background-color: #1d72db;
+  background-color: #0000cc;
+}
+.btn--secondary {
+  width: 100%;
+  color: #1d72db;
+  background-color: transparent;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+.btn--secondary:hover, .btn--secondary:focus {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 5px, rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(0, 0, 0, 0.14) 0px 0px 4px;
 }
 .btn--text {
   color: #1d72db;
@@ -161,12 +176,15 @@ body {
   position: relative;
 }
 .card-holder__item {
+  display: flex;
+  width: 100%;
   height: 68px;
   padding-top: 32px;
   padding-bottom: 0;
   justify-content: center;
   overflow-x: hidden;
   gap: 16px;
+  font-size: 1.3rem;
 }
 .card-holder__link {
   text-decoration: none;
@@ -204,6 +222,8 @@ body {
   justify-content: space-between;
   min-height: 475px;
   padding: 0 2rem 2.5rem;
+  font-size: 16px;
+  line-height: 22px;
 }
 .card__forgot-password {
   margin-bottom: 2rem;
@@ -223,6 +243,10 @@ body {
 .card__footer {
   text-align: center;
   margin-top: 2rem;
+}
+.card__footer--color {
+  color: blue;
+  background-color: #ccc;
 }
 .card__create-account {
   color: #1d72db;
@@ -258,7 +282,8 @@ body {
 .advert__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1rem;
   border: 2px solid #80808a;
 }
@@ -322,6 +347,9 @@ body {
   background: none;
   border: none;
 }
+.form-group__input:focus-visible {
+  outline: transparent;
+}
 .form-group__input-root {
   width: 100%;
   display: flex;
@@ -343,10 +371,22 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid #555;
   border-radius: 4px;
   position: relative;
   cursor: pointer;
+}
+.checkbox__input:focus-visible {
+  outline: 2px solid #38bdf8;
+}
+
+.phone-section {
+  width: 40%;
+  background-color: var(--light-blue);
+  padding: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 body {
@@ -426,4 +466,4 @@ body {
 
 .phone-section__link:hover {
   text-decoration: underline;
-}
+}/*# sourceMappingURL=style.css.map */
